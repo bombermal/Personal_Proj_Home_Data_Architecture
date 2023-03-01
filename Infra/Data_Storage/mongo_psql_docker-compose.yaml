@@ -1,0 +1,35 @@
+version: '3.9'
+services:
+
+  mongo:
+    container_name: dl1-mongo
+    image: mongo:latest
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongo
+      MONGO_INITDB_ROOT_PASSWORD: mongo
+    ports:
+      - 27017:27017
+    # volumes:
+    #   - dl1:/data/db
+  postgres-1:
+    container_name: dl2-postgres
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432  
+  
+  postgres-2:
+    container_name: dl3-postgres
+    image: postgres:latest
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5433:5432
+    # volumns: 
+ 
