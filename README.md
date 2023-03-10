@@ -4,10 +4,9 @@ This project contains my personal structure for store, process and presenta my d
 Structure at the moment:
 - Storage:
   - Data base:
-    - 1st level - MongoDB
-    - 2nd and 3rd level - Postgres
+    - 1st level - Postgres
 - ETL
-    - Orchestration - Airflow
+    - Ingestion - Airbyte
     - Data processing - Python
 - Presentation
     - Metabase
