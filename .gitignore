@@ -135,3 +135,7 @@ client_secret.json
 # Temporary things
 _Old/*
 Infra/Data_Ingestion/airbyte
+
+# Sensive data
+*.xlsx
+*.csv
